@@ -205,7 +205,7 @@ body .bg {
 }
 
 .full_card_container .card_container .card_txt_holder .card_name {
-  height: 20%;
+  height: 10%;
   width: 100%;
   color: white;
   -webkit-box-align: center;
@@ -218,18 +218,22 @@ body .bg {
 }
 
 .full_card_container .card_container .card_txt_holder .card_time {
-  height: 20%;
+  height: 10%;
   width: 100%;
   color: white;
   font-size: 20px;
+  padding: 10px 0;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .full_card_container .card_container .card_txt_holder .card_description {
-  height: 60%;
+  height: 80%;
   width: 100%;
   padding: 10px 0px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .full_card_container .card_container .middle_box {
@@ -245,7 +249,7 @@ body .bg {
 
 .full_card_container .card_container .middle_box .card_photo {
   height: 80%;
-  width: 70%;
+  width: 80%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -256,12 +260,18 @@ body .bg {
   display: flex;
   font-size: 20px;
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: bold;
   border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.full_card_container .card_container .middle_box .skills {
+  color: white;
 }
 
 .full_card_container .card_arrow_box {
-  width: 15%;
+  width: 20%;
   height: 100%;
   padding: 0 20px;
 }
@@ -271,6 +281,7 @@ body .bg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   width: 100%;
   height: 10%;
   cursor: pointer;
@@ -278,5 +289,158 @@ body .bg {
   font-size: 20px;
   border-bottom: 1px solid #b91df2;
   border-top: 1px solid #b91df2;
+}
+
+.project_intro_container {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.project_intro_container .project_text {
+  width: 50%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10%;
+  background: rgba(255, 255, 255, 0.605);
+  padding: 30px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project_intro_container .project_text span {
+  color: #b91df2;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.things_I_like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 5vh;
+}
+
+.things_I_like .like_big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  color: #b91df2;
+  font-weight: bold;
+  font-size: 30px;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.things_I_like_space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 5vh;
+}
+
+.things_I_like_space .like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  color: white;
+}
+
+.about_me_container {
+  border: yellow 1px solid;
+  width: 100%;
+  height: 78vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about_me_container .about_left {
+  height: 100%;
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about_me_container .about_left .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 1%;
+  width: 15%;
+}
+
+.about_me_container .about_left .two {
+  height: 1%;
+  width: 30%;
+}
+
+.about_me_container .about_left .tree {
+  height: 1%;
+  width: 45%;
+}
+
+.about_me_container .about_left .four {
+  height: 1%;
+  width: 60%;
+}
+
+.about_me_container .about_left .five {
+  height: 1%;
+  width: 75%;
+}
+
+.about_me_container .about_right {
+  height: 100%;
+  width: 49%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -133,6 +133,7 @@ body {
 
 .space {
     height: 20vh;
+    
 }
 
 // start card page
@@ -158,7 +159,7 @@ body {
 
 
             .card_name {
-                height: 20%;
+                height: 10%;
                 width: 100%;
                 color: white;
                 align-items: center;
@@ -167,18 +168,20 @@ body {
             }
 
             .card_time {
-                height: 20%;
+                height: 10%;
                 width: 100%;
                 color: white;
                 font-size: 20px;
+                padding: 10px 0;
+                justify-content: left;
             }
 
             .card_description {
-                height: 60%;
+                height: 80%;
                 width: 100%;
                 padding: 10px 0px;
                 color: white;
-                font-size: 20px;
+                font-size: 18px;
             }
         }
 
@@ -190,27 +193,34 @@ body {
 
             .card_photo {
                 height: 80%;
-                width: 70%;
+                width: 80%;
                 object-fit: contain;
             }
             .github {
                 display: flex;
                 font-size: 20px;
                 text-decoration: none;
-                color: white;
+                color: black;
+                font-weight: bold;
                 border-bottom: 1px solid white;
+                border-top: 1px solid white;
+            }
+
+            .skills {
+                color: white;
             }
         }
     }
 
     .card_arrow_box {
-        width: 15%;
+        width: 20%;
         height: 100%;
         padding: 0 20px;
 
 
         .card_arrow {
             flex-direction: column;
+            text-align: center;
             width: 100%;
             height: 10%;
             cursor: pointer;
@@ -219,5 +229,115 @@ body {
             border-bottom: 1px solid color(primary);
             border-top: 1px solid color(primary);
         }
+    }
+}
+
+// <!-- start project intro to trigger the function nextProject -->
+
+.project_intro_container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+
+    .project_text {
+        width: 50%;
+        height: 70%;
+        display: flex;
+        border-radius: 10%;
+        background:rgba(255, 255, 255, 0.605);
+        padding: 30px 20px;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        align-items: center;
+
+        span {
+            color: color(primary);
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+// start things I like
+
+.things_I_like {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+
+    .like_big {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        color: color(primary);
+        font-weight: bold;
+        font-size: 30px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+}
+
+.things_I_like_space {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 5vh;
+
+    
+    .like{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        color: white;
+    }
+}
+
+.about_me_container {
+    border: yellow 1px solid;
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    justify-content: space-between;
+
+    .about_left {
+        height: 100%;
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .one {
+            height: 1%;
+            width: 15%;
+        }
+        .two {
+            height: 1%;
+            width: 30%
+        }
+        .tree {
+            height: 1%;
+            width: 45%
+        }
+        .four {
+            height: 1%;
+            width: 60%
+        }
+        .five {
+            height: 1%;
+            width: 75%
+        }
+    }
+
+    .about_right {
+        height: 100%;
+        width: 49%;
     }
 }

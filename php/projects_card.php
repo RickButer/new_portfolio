@@ -9,7 +9,7 @@
 
 
  foreach ($db_result as $row){   
-   $smallArray = array($row['name'], $row['description'], $row['time_coding'], $row['photo']);
+   $smallArray = array($row['name'], $row['description'], $row['time_coding'], $row['photo'], $row['skills_used']);
    array_push($bigArray, $smallArray);
  }  
 

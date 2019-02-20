@@ -27,14 +27,14 @@ session_start();
         <a href="#" class="navbar" id="contact_me">contact me</a>
     </div>
 
-
+    <!-- Start typewriter animation -->
     <div class="flex_grid">
         <div class="typewriter1 typewriter flex"></div>
         <div class="typewriter2 typewriter flex"></div>
         <div class="typewriter3 typewriter flex"></div>
         <div class="space"></div>
     </div>
-
+    <!-- start project container with AJAX -->
     <div class="full_card_container flex">
         <div class="card_container flex">
             <div class="card_txt_holder">
@@ -43,15 +43,49 @@ session_start();
                 <div class="card_description flex" id="description"></div>
             </div>
             <div class="middle_box flex">
+                <div class="skills" id="skill"></div>
                 <img src="" class="card_photo" id="photo" />
-                <a href="" class="github flex"><p>go to my github to see all my projects</p></a>
+                <a href="" class="github flex">
+                    <p>go to my github to see all my projects</p>
+                </a>
             </div>
             <div class="card_arrow_box flex">
                 <div class="card_arrow flex" id="ajax_call">next project</div>
             </div>
         </div>
     </div>
+    <!-- start project intro to trigger the function nextProject -->
+    <div class="project_intro_container" id='project_intro'>
+        <div class="project_text">
+            <p> I am currently studying at CodeGorilla in the Netherlands.<br /><br />
+                I did not have any coding skills before this.<br /><br /><br />
+                With every project you can see how far into the study I was at the time and which skills I used.<br /><br />
+                <span>See my projects</span></p>
+        </div>
+    </div>
+    <!-- start the about me page -->
 
+    <div class="things_I_like">
+        <div class="like_big">Things about me</div>
+    </div>
+    <div class="things_I_like_space">
+        <div class="like">Things I like</div>
+        <div class="like">Things I dont like</div>
+    </div>
+    <div class="about_me_container">
+        <div class="about_left debug">
+            <div class="one debug"></div>
+            <div class="two debug"></div>
+            <div class="tree debug"></div>
+            <div class="four debug"></div>
+            <div class="five debug"></div>
+
+        </div>
+
+
+        <div class="about_right debug"></div>
+
+    </div>
 
 
 

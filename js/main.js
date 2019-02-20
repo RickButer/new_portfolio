@@ -35,9 +35,6 @@ function typeWriter3() {
     }
 }
 
-
-
-
 function disapearTypeWriter() {
     document.getElementsByClassName('flex_grid')[0].style.display = 'none';
     changeBG();
@@ -56,25 +53,29 @@ document.getElementById('my_projects').addEventListener('click', function(){
     );
 
 function myProjects() {
-    document.getElementsByClassName('full_card_container')[0].style.display = 'flex'
+    document.getElementsByClassName('flex_grid')[0].style.display = 'none';
+    document.getElementById('project_intro').style.display = 'flex';
     document.getElementsByClassName('bg')[0].style.backgroundColor = '#00f9bf';
+    document.getElementsByClassName('full_card_container')[0].style.display = 'none';
 }
-
-
 
 document.getElementById('contact_me').addEventListener('click', function(){
     contactMe()}
     );
     function contactMe() {
-        document.getElementsByClassName('bg')[0].style.backgroundColor = '#054cbf';
+    document.getElementById('project_intro').style.display = 'none';
+    document.getElementsByClassName('full_card_container')[0].style.display = 'none';
+    document.getElementsByClassName('bg')[0].style.backgroundColor = '#054cbf';
     }
 
-    document.getElementById('about_me').addEventListener('click', function(){
-        aboutMe()}
-        );
-        function aboutMe() {
-            document.getElementsByClassName('bg')[0].style.backgroundColor = '#b91df2';
-        }
+document.getElementById('about_me').addEventListener('click', function(){
+    aboutMe()}
+    );
+    function aboutMe() {
+    document.getElementById('project_intro').style.display = 'none';
+    document.getElementsByClassName('full_card_container')[0].style.display = 'none';
+    document.getElementsByClassName('bg')[0].style.backgroundColor = '#b91df2';
+    }
 
 
 
