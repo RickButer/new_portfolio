@@ -13,7 +13,7 @@ function nextProject() { //functie als je op de next knop klikt .
     xmlhttp.onload = function () {   // ALS JE EEN RESPONSE KRIJGT WORDT DIT UITGEVOERD
         if (this.status == 200) { 
             var DBPackage = JSON.parse(this.responseText);
-            // console.log(DBPackage);
+            console.log(DBPackage);
             document.getElementById('project_intro').style.display = 'none';
             document.getElementsByClassName('full_card_container')[0].style.display = 'flex';
             document.getElementById('name').innerHTML = DBPackage[count][0];

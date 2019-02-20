@@ -3,9 +3,7 @@ $colors: (primary: #b91df2);
 
 @function color($color-name) {
     @return map-get($colors, $color-name)
-}
-
-;
+};
 
 .flex {
     display: flex;
@@ -300,6 +298,8 @@ body {
         font-size: 25px;
     }
 }
+.about_me_toggle {
+    display: none;
 
 .about_me_container {
     width: 100%;
@@ -314,31 +314,30 @@ body {
         align-items: flex-end;
         flex-direction: column;
         justify-content: space-around;
-        // border-right: 1px solid white;
 
         .one {
             height: 0.2%;
-            width: 15%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
         }
         .two {
             height: 0.2%;
-            width: 30%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
         }
         .tree {
             height: 0.2%;
-            width: 45%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
         }
         .four {
             height: 0.2%;
-            width: 60%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
         }
         .five {
             height: 0.2%;
-            width: 75%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
         }
     }
@@ -347,35 +346,135 @@ body {
         height: 100%;
         width: 50%;
         display: flex;
+        text-align: right;   
         flex-direction: column;
         justify-content: space-around;
-        // border-left: 1px solid white;
 
         .one {
             height: 0.2%;
-            width: 15%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
+        
             
         }
         .two {
             height: 0.2%;
-            width: 30%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
         }
         .tree {
             height: 0.2%;
-            width: 45%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
         }
         .four {
             height: 0.2%;
-            width: 60%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
         }
         .five {
             height: 0.2%;
-            width: 75%;
+            width: 0%;
             background:rgba(255, 255, 255, 0.605);
+            }
         }
     }
 }
+
+.white {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.animation1  {
+    animation: about_me forwards 3s 0.4s;
+
+    @keyframes about_me {
+        0%{width: 0%;}
+        100%{width: 15%;}
+    }
+
+    .p1 {
+        animation: pAnimation1 1.5s forwards 3.2s;
+        opacity: 0;
+
+        @keyframes pAnimation1 {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    }
+}
+
+.animation2  {
+    animation: about_me2 forwards 3s 0.8s;
+
+    @keyframes about_me2 {
+        0%{width: 0%;}
+        100%{width: 30%;}
+    }
+    .p2 {
+        animation: pAnimation2 1.5s forwards 3.4s;
+        opacity: 0;
+
+        @keyframes pAnimation2 {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    }
+}
+
+.animation3  {
+    animation: about_me3 forwards 3s 1.2s;
+
+    @keyframes about_me3 {
+        0%{width: 0%;}
+        100%{width: 45%;}
+    }
+    .p3 {
+        animation: pAnimation3 1.5s forwards 3.6s;
+        opacity: 0;
+
+        @keyframes pAnimation3 {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    }
+}
+
+.animation4  {
+    animation: about_me4 forwards 3s 1.6s;
+
+    @keyframes about_me4 {
+        0%{width: 0%;}
+        100%{width: 60%;}
+    }
+    .p4 {
+        animation: pAnimation4 1.5s forwards 3.8s;
+        opacity: 0;
+
+        @keyframes pAnimation4 {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    }
+}
+
+.animation5  {
+    animation: about_me5 forwards 3s 2s;
+
+    @keyframes about_me5 {
+        0%{width: 0%;}
+        100%{width: 75%;}
+    }
+    .p5 {
+        animation: pAnimation5 1.5s forwards 4s;
+        opacity: 0;
+
+        @keyframes pAnimation5 {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    }
+}
+

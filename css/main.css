@@ -382,7 +382,11 @@ body .bg {
   font-size: 25px;
 }
 
-.about_me_container {
+.about_me_toggle {
+  display: none;
+}
+
+.about_me_toggle .about_me_container {
   width: 100%;
   height: 80vh;
   display: -webkit-box;
@@ -393,7 +397,7 @@ body .bg {
           justify-content: space-between;
 }
 
-.about_me_container .about_left {
+.about_me_toggle .about_me_container .about_left {
   height: 100%;
   width: 50%;
   display: -webkit-box;
@@ -410,42 +414,43 @@ body .bg {
       justify-content: space-around;
 }
 
-.about_me_container .about_left .one {
+.about_me_toggle .about_me_container .about_left .one {
   height: 0.2%;
-  width: 15%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_left .two {
+.about_me_toggle .about_me_container .about_left .two {
   height: 0.2%;
-  width: 30%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_left .tree {
+.about_me_toggle .about_me_container .about_left .tree {
   height: 0.2%;
-  width: 45%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_left .four {
+.about_me_toggle .about_me_container .about_left .four {
   height: 0.2%;
-  width: 60%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_left .five {
+.about_me_toggle .about_me_container .about_left .five {
   height: 0.2%;
-  width: 75%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_right {
+.about_me_toggle .about_me_container .about_right {
   height: 100%;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: right;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -454,33 +459,274 @@ body .bg {
       justify-content: space-around;
 }
 
-.about_me_container .about_right .one {
+.about_me_toggle .about_me_container .about_right .one {
   height: 0.2%;
-  width: 15%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_right .two {
+.about_me_toggle .about_me_container .about_right .two {
   height: 0.2%;
-  width: 30%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_right .tree {
+.about_me_toggle .about_me_container .about_right .tree {
   height: 0.2%;
-  width: 45%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_right .four {
+.about_me_toggle .about_me_container .about_right .four {
   height: 0.2%;
-  width: 60%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_right .five {
+.about_me_toggle .about_me_container .about_right .five {
   height: 0.2%;
-  width: 75%;
+  width: 0%;
   background: rgba(255, 255, 255, 0.605);
+}
+
+.white {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.animation1 {
+  -webkit-animation: about_me forwards 3s 0.4s;
+          animation: about_me forwards 3s 0.4s;
+}
+
+@-webkit-keyframes about_me {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+@keyframes about_me {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
+.animation1 .p1 {
+  -webkit-animation: pAnimation1 1.5s forwards 3.2s;
+          animation: pAnimation1 1.5s forwards 3.2s;
+  opacity: 0;
+}
+
+@-webkit-keyframes pAnimation1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pAnimation1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation2 {
+  -webkit-animation: about_me2 forwards 3s 0.8s;
+          animation: about_me2 forwards 3s 0.8s;
+}
+
+@-webkit-keyframes about_me2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes about_me2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+.animation2 .p2 {
+  -webkit-animation: pAnimation2 1.5s forwards 3.4s;
+          animation: pAnimation2 1.5s forwards 3.4s;
+  opacity: 0;
+}
+
+@-webkit-keyframes pAnimation2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pAnimation2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation3 {
+  -webkit-animation: about_me3 forwards 3s 1.2s;
+          animation: about_me3 forwards 3s 1.2s;
+}
+
+@-webkit-keyframes about_me3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes about_me3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+.animation3 .p3 {
+  -webkit-animation: pAnimation3 1.5s forwards 3.6s;
+          animation: pAnimation3 1.5s forwards 3.6s;
+  opacity: 0;
+}
+
+@-webkit-keyframes pAnimation3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pAnimation3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation4 {
+  -webkit-animation: about_me4 forwards 3s 1.6s;
+          animation: about_me4 forwards 3s 1.6s;
+}
+
+@-webkit-keyframes about_me4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes about_me4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.animation4 .p4 {
+  -webkit-animation: pAnimation4 1.5s forwards 3.8s;
+          animation: pAnimation4 1.5s forwards 3.8s;
+  opacity: 0;
+}
+
+@-webkit-keyframes pAnimation4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pAnimation4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation5 {
+  -webkit-animation: about_me5 forwards 3s 2s;
+          animation: about_me5 forwards 3s 2s;
+}
+
+@-webkit-keyframes about_me5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes about_me5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.animation5 .p5 {
+  -webkit-animation: pAnimation5 1.5s forwards 4s;
+          animation: pAnimation5 1.5s forwards 4s;
+  opacity: 0;
+}
+
+@-webkit-keyframes pAnimation5 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pAnimation5 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
