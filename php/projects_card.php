@@ -3,17 +3,18 @@
 
  $query = 'SELECT * FROM projects';
 
- $db_result = $conn->query($query);  
+ $db_result = $conn->query($query); 
+ 
+ $bigArray = array();
 
- do ($db_result $row)
 
-   $result = mysql_query("SELECT * FROM projects");
-   $rows = array();
-   while($r = mysql_fetch_assoc($db_result)) {
-   $rows['name'],['time_coding'],['description'],['photo'] = $r;
-   }
+ foreach ($db_result as $row){   
+   $smallArray = array($row['name'], $row['description'], $row['time_coding'], $row['photo']);
+   array_push($bigArray, $smallArray);
+ }  
 
-   print json_encode($rows);
+   echo json_encode($bigArray);
 
+  //  var_dump($bigArray);
     $conn = null;
  ?>

@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.768);
   font-family: 'Nixie One', cursive;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -177,6 +177,7 @@ body .bg {
   width: 100vw;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  display: none;
 }
 
 .full_card_container .card_container {
@@ -231,11 +232,32 @@ body .bg {
   font-size: 20px;
 }
 
-.full_card_container .card_container .card_photo {
-  height: 100%;
+.full_card_container .card_container .middle_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90%;
+}
+
+.full_card_container .card_container .middle_box .card_photo {
+  height: 80%;
   width: 70%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.full_card_container .card_container .middle_box .github {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 .full_card_container .card_arrow_box {

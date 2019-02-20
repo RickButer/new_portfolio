@@ -20,8 +20,8 @@ $colors: (primary: #b91df2);
 
 
 body {
-    // background-color: rgba(0, 0, 0, 0.768);
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.768);
+    // background-color: white;
     font-family: 'Nixie One', cursive;
     margin: 0;
     box-sizing: border-box;
@@ -141,6 +141,7 @@ body {
     height: 80vh;
     width: 100vw;
     justify-content: space-around;
+    display: none;
 
     .card_container {
         height: 100%;
@@ -154,7 +155,7 @@ body {
             width: 20%;
             height: 100%;
             padding: 0 20px;
-           
+
 
             .card_name {
                 height: 20%;
@@ -181,10 +182,24 @@ body {
             }
         }
 
-        .card_photo {
-            height: 100%;
-            width: 70%;
-            object-fit: contain;
+        .middle_box {
+            display: flex;
+            flex-direction: column;
+            height: 90%;
+
+
+            .card_photo {
+                height: 80%;
+                width: 70%;
+                object-fit: contain;
+            }
+            .github {
+                display: flex;
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+                border-bottom: 1px solid white;
+            }
         }
     }
 

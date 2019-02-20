@@ -27,31 +27,31 @@ session_start();
         <a href="#" class="navbar" id="contact_me">contact me</a>
     </div>
 
-<!-- 
-    <div class="flex_grid">
-            <div class="typewriter1 typewriter flex"></div>
-            <div class="typewriter2 typewriter flex"></div>
-            <div class="typewriter3 typewriter flex"></div>
-            <div class="space"></div>
-    </div> -->
-      
-    <!-- <div class="full_card_container flex">
-            <div class="card_container flex">
-               <div class="card_txt_holder">
-                  <div class="card_name flex"></div>
-                  <div class="card_time flex"></div>
-                  <div class="card_description flex"></div>
-               </div>
-                <img src="" class="card_photo"/>
-            <div class="card_arrow_box flex">
-               <div class="card_arrow flex" id="ajax_call">next project</div>
-            </div>
-         </div>
-         </div> -->
 
-         <?php
-         include 'php/projects_card.php'
-         ?>
+    <div class="flex_grid">
+        <div class="typewriter1 typewriter flex"></div>
+        <div class="typewriter2 typewriter flex"></div>
+        <div class="typewriter3 typewriter flex"></div>
+        <div class="space"></div>
+    </div>
+
+    <div class="full_card_container flex">
+        <div class="card_container flex">
+            <div class="card_txt_holder">
+                <div class="card_name flex" id="name"></div>
+                <div class="card_time flex" id="time"></div>
+                <div class="card_description flex" id="description"></div>
+            </div>
+            <div class="middle_box flex">
+                <img src="" class="card_photo" id="photo" />
+                <a href="" class="github flex"><p>go to my github to see all my projects</p></a>
+            </div>
+            <div class="card_arrow_box flex">
+                <div class="card_arrow flex" id="ajax_call">next project</div>
+            </div>
+        </div>
+    </div>
+
 
 
 
