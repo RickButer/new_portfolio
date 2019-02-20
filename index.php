@@ -73,18 +73,20 @@ session_start();
         <div class="like">Things I dont like</div>
     </div>
     <div class="about_me_container">
-        <div class="about_left debug">
-            <div class="one debug"></div>
-            <div class="two debug"></div>
-            <div class="tree debug"></div>
-            <div class="four debug"></div>
-            <div class="five debug"></div>
-
+        <div class="about_left">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="tree"></div>
+            <div class="four"></div>
+            <div class="five"></div>
         </div>
-
-
-        <div class="about_right debug"></div>
-
+        <div class="about_right">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="tree"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+        </div>
     </div>
 
 

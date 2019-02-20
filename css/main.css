@@ -379,12 +379,12 @@ body .bg {
           align-items: center;
   width: 20%;
   color: white;
+  font-size: 25px;
 }
 
 .about_me_container {
-  border: yellow 1px solid;
   width: 100%;
-  height: 78vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,7 +395,54 @@ body .bg {
 
 .about_me_container .about_left {
   height: 100%;
-  width: 49%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about_me_container .about_left .one {
+  height: 0.2%;
+  width: 15%;
+  background: rgba(255, 255, 255, 0.605);
+}
+
+.about_me_container .about_left .two {
+  height: 0.2%;
+  width: 30%;
+  background: rgba(255, 255, 255, 0.605);
+}
+
+.about_me_container .about_left .tree {
+  height: 0.2%;
+  width: 45%;
+  background: rgba(255, 255, 255, 0.605);
+}
+
+.about_me_container .about_left .four {
+  height: 0.2%;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.605);
+}
+
+.about_me_container .about_left .five {
+  height: 0.2%;
+  width: 75%;
+  background: rgba(255, 255, 255, 0.605);
+}
+
+.about_me_container .about_right {
+  height: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,40 +454,33 @@ body .bg {
       justify-content: space-around;
 }
 
-.about_me_container .about_left .one {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  height: 1%;
+.about_me_container .about_right .one {
+  height: 0.2%;
   width: 15%;
+  background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_left .two {
-  height: 1%;
+.about_me_container .about_right .two {
+  height: 0.2%;
   width: 30%;
+  background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_left .tree {
-  height: 1%;
+.about_me_container .about_right .tree {
+  height: 0.2%;
   width: 45%;
+  background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_left .four {
-  height: 1%;
+.about_me_container .about_right .four {
+  height: 0.2%;
   width: 60%;
+  background: rgba(255, 255, 255, 0.605);
 }
 
-.about_me_container .about_left .five {
-  height: 1%;
+.about_me_container .about_right .five {
+  height: 0.2%;
   width: 75%;
-}
-
-.about_me_container .about_right {
-  height: 100%;
-  width: 49%;
+  background: rgba(255, 255, 255, 0.605);
 }
 /*# sourceMappingURL=main.css.map */
