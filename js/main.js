@@ -67,6 +67,7 @@ document.getElementById('contact_me').addEventListener('click', function(){
     document.getElementById('project_intro').style.display = 'none';
     document.getElementsByClassName('full_card_container')[0].style.display = 'none';
     document.getElementsByClassName('about_me_toggle')[0].style.display = 'none';
+    document.getElementById('contact_me_container').style.display = 'flex';
     document.getElementsByClassName('bg')[0].style.backgroundColor = '#054cbf';
     }
 

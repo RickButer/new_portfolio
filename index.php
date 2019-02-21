@@ -36,12 +36,12 @@ session_start();
     <div class="full_card_container flex">
         <div class="card_container flex">
             <div class="card_txt_holder">
-                <div class="card_name flex" id="name"></div>
+                <div class="card_name flex" id="skill"></div>
                 <div class="card_time flex" id="time"></div>
                 <div class="card_description flex" id="description"></div>
             </div>
             <div class="middle_box flex">
-                <div class="skills" id="skill"></div>
+                <div class="skills" id="name"></div>
                 <img src="" class="card_photo" id="photo" />
                 <a href="" class="github flex">
                     <p>go to my github to see all my projects</p>
@@ -87,6 +87,19 @@ session_start();
             </div>
         </div>
     </div>
+    <!-- start the contact me page -->
+    <div class="github_linkedin_text_container" id="contact_me_container">
+    <div class="link_container">
+        <a href="#" class="linkedin"><img src="images/linkedin.jpg"/></a>
+        <a href="#" class="github"><img src="images/github.jpg"/></a>
+
+
+    </div>
+
+    </div>
+
+
+
     <script src="js/main.js"></script>
     <script src="js/ajax.js"></script>
 </body>

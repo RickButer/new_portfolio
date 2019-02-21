@@ -53,7 +53,7 @@ body .bg {
 }
 
 .logo_container .navbar {
-  min-width: 10vw;
+  width: 13%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +79,7 @@ body .bg {
   font-weight: bold;
   outline: none;
   text-decoration: none;
-  width: 30vw;
+  min-width: 300px;
 }
 
 .logo_container .logo .rotate {
@@ -94,6 +94,15 @@ body .bg {
   color: white;
   -webkit-animation: blink 1.2s forwards infinite;
           animation: blink 1.2s forwards infinite;
+}
+
+@media screen and (max-width: 400px) {
+  .logo_container {
+    display: block;
+  }
+  .logo_container .navbar {
+    display: block;
+  }
 }
 
 @-webkit-keyframes rotate {
@@ -199,13 +208,13 @@ body .bg {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 20%;
+  width: 30%;
   height: 100%;
   padding: 0 20px;
 }
 
 .full_card_container .card_container .card_txt_holder .card_name {
-  height: 10%;
+  height: 20%;
   width: 100%;
   color: white;
   -webkit-box-align: center;
@@ -218,7 +227,7 @@ body .bg {
 }
 
 .full_card_container .card_container .card_txt_holder .card_time {
-  height: 10%;
+  height: 20%;
   width: 100%;
   color: white;
   font-size: 20px;
@@ -229,7 +238,7 @@ body .bg {
 }
 
 .full_card_container .card_container .card_txt_holder .card_description {
-  height: 80%;
+  height: 60%;
   width: 100%;
   padding: 10px 0px;
   color: white;
@@ -268,6 +277,10 @@ body .bg {
 
 .full_card_container .card_container .middle_box .skills {
   color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
 }
 
 .full_card_container .card_arrow_box {
@@ -412,6 +425,7 @@ body .bg {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-right: 1px solid white;
 }
 
 .about_me_toggle .about_me_container .about_left .one {
@@ -457,6 +471,7 @@ body .bg {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-left: 1px solid white;
 }
 
 .about_me_toggle .about_me_container .about_right .one {
@@ -491,8 +506,7 @@ body .bg {
 
 .white {
   color: white;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 .animation1 {
@@ -728,5 +742,66 @@ body .bg {
   100% {
     opacity: 1;
   }
+}
+
+#contact_me_container {
+  display: none;
+}
+
+.github_linkedin_text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 88vh;
+}
+
+.github_linkedin_text_container .link_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.github_linkedin_text_container .link_container .linkedin {
+  width: 40%;
+  height: 30%;
+}
+
+.github_linkedin_text_container .link_container .linkedin img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.github_linkedin_text_container .link_container .linkedin img img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.github_linkedin_text_container .link_container .github {
+  width: 40%;
+  height: 30%;
+}
+
+.github_linkedin_text_container .link_container .github img {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 /*# sourceMappingURL=main.css.map */
