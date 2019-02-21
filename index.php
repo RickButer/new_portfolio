@@ -1,8 +1,3 @@
-<?php
-session_start();
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,9 +16,12 @@ session_start();
         <a href="index.php" class="logo">
             < Rick's portfolio <span class="rotate">/</span> ><span class="blink"> _</span>
         </a>
-        <a href="#" class="navbar" id="about_me">about me</a>
-        <a href="#" class="navbar" id="my_projects">my projects</a>
-        <a href="#" class="navbar" id="contact_me">contact me</a>
+        <div class="extra_flex">
+            <a href="#" class="navbar" id="about_me">about me</a>
+            <a href="#" class="navbar" id="my_projects">my projects</a>
+            <a href="#" class="navbar" id="contact_me">contact me</a>
+            <div class="extra_space"></div>
+        </div>
     </div>
     <!-- Start typewriter animation -->
     <div class="flex_grid">
@@ -72,30 +70,56 @@ session_start();
         </div>
         <div class="about_me_container">
             <div class="about_left">
-                <div class="one animation1 white"><p class='p1'>coding ofcourse!</p></div>
-                <div class="two animation2 white"><p class='p2'>jazz music</p></div>
-                <div class="tree animation3 white"><p class='p3'>riding my motorbike</p></div>
-                <div class="four animation4 white"><p class='p4'>watching the stars</p></div>
-                <div class="five animation5 white"><p class='p5'>exploring new cultures</p></div>
+                <div class="one animation1 white">
+                    <p class='p1'>coding ofcourse!</p>
+                </div>
+                <div class="two animation2 white">
+                    <p class='p2'>jazz music</p>
+                </div>
+                <div class="tree animation3 white">
+                    <p class='p3'>riding my motorbike</p>
+                </div>
+                <div class="four animation4 white">
+                    <p class='p4'>watching the stars</p>
+                </div>
+                <div class="five animation5 white">
+                    <p class='p5'>exploring new cultures</p>
+                </div>
             </div>
             <div class="about_right">
-                <div class="one animation1 white"><p class='p1'>politics</p></div>
-                <div class="two animation2 white"><p class='p2'>taxes</p></div>
-                <div class="tree animation3 white"><p class='p3'>shots at the bar</p></div>
-                <div class="four animation4 white"><p class='p4'>grumpy, negative people</p></div>
-                <div class="five animation5 white"><p class='p5'>forgetting a semicolon somewere...</p></div>
+                <div class="one animation1 white">
+                    <p class='p1'>politics</p>
+                </div>
+                <div class="two animation2 white">
+                    <p class='p2'>taxes</p>
+                </div>
+                <div class="tree animation3 white">
+                    <p class='p3'>shots at the bar</p>
+                </div>
+                <div class="four animation4 white">
+                    <p class='p4'>grumpy, negative people</p>
+                </div>
+                <div class="five animation5 white">
+                    <p class='p5'>forgetting a semicolon somewere...</p>
+                </div>
             </div>
         </div>
     </div>
     <!-- start the contact me page -->
     <div class="github_linkedin_text_container" id="contact_me_container">
-    <div class="link_container">
-        <a href="#" class="linkedin"><img src="images/linkedin.jpg"/></a>
-        <a href="#" class="github"><img src="images/github.jpg"/></a>
-
-
-    </div>
-
+        <div class="link_container">
+            <a href="#" class="linkedin"><img src="images/linkedin.jpg" /></a>
+            <a href="#" class="github"><img src="images/github.jpg" /></a>
+        </div>
+        <div class="text_box">
+            <div class="text">
+                <p>Hey there!<br /><br />My name is Rick Buter and I have started coding in January.<br /><br />
+                Feel free to contact me for any questions or to just say hi!<br /><br />
+                You can also click the links to the left to go to my LinkedIn or Github Page.<br /><br /><br /><br />
+                <span class="span1">buter.rick@gmail.com</span><br /><br />
+                </p>
+            </div>
+        </div>
     </div>
 
 

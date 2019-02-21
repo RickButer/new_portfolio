@@ -19,7 +19,6 @@ $colors: (primary: #b91df2);
 
 body {
     background-color: rgba(0, 0, 0, 0.768);
-    // background-color: white;
     font-family: 'Nixie One', cursive;
     margin: 0;
     box-sizing: border-box;
@@ -44,6 +43,28 @@ body {
     display: flex;
     padding: $padding;
 
+    .extra_flex {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+
+        .navbar {
+            width: 13%;
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            border-bottom: 1px solid transparent;
+        }
+        .extra_space {
+            width: 10%;
+            display: flex;
+        }
+    }
+
     #my_projects:hover {
         border-bottom: 1px solid #00f9bf;
     }
@@ -52,16 +73,6 @@ body {
         border-bottom: 1px solid #054cbf;
     }
 
-    .navbar {
-        width: 13%;
-        display: flex;
-        align-items: center;    
-        justify-content: center;
-        text-decoration: none;
-        font-size: 18px;
-        color: white;
-        border-bottom: 1px solid transparent;
-    }
 
     .navbar:hover {
         border-bottom: 1px solid color(primary);
@@ -73,7 +84,7 @@ body {
         font-weight: bold;
         outline: none;
         text-decoration: none;
-        min-width: 300px;
+        min-width: 350px;
 
         .rotate {
             color: color(primary);
@@ -94,9 +105,18 @@ body {
     .logo_container {
         display: block;
 
+        .extra_space {
+            display: none;
+        }
+
         .navbar {
             display: block;
+            text-align: center;
+            width: 100%
         }
+    }
+    .project_text {
+        height: 90%;
     }
 }
 
@@ -210,8 +230,8 @@ body {
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
-                border-bottom: 1px solid white;
-                border-top: 1px solid white;
+                border-bottom: 1px solid black;
+                border-top: 1px solid black;
             }
 
             .skills {
@@ -258,7 +278,7 @@ body {
         height: 70%;
         display: flex;
         border-radius: 10%;
-        background:rgba(255, 255, 255, 0.605);
+        background:rgba(255, 255, 255, 0.782);
         padding: 30px 20px;
         font-size: 22px;
         font-weight: bold;
@@ -290,7 +310,6 @@ body {
         color: color(primary);
         font-weight: bold;
         font-size: 30px;
-        border-bottom: 1px solid white;
         padding-bottom: 10px;
     }
 }
@@ -513,29 +532,63 @@ body {
         align-items: center;
 
         .linkedin {
-            width: 40%;
-            height: 30%;
+            width: 30%;
+            height: 20%;
             img {
                 max-width: 100%;
                 height: 100%;
                 object-fit: cover;
-                filter: grayscale(100%);
+                transition: 1s;
+                filter: grayscale(0%);
+                transform: scale(0);
+                animation: linkedhub 1s forwards;
 
-                img:hover {
-                    filter: grayscale(0%);
-                }
+            }
+            img:hover {
+                filter: grayscale(100%);
             }
         }
 
         .github {
-            width: 40%;
-            height: 30%;
+            width: 30%;
+            height: 20%;
 
             img {
                 width: 100%;
                 max-height: 100%;
                 object-fit: cover;
+                transition: 1s;
+                filter: grayscale(0%);
+                transform: scale(0);
+                animation: linkedhub 1s forwards;
+            }
+            img:hover {
                 filter: grayscale(100%);
+            }
+        }
+
+        @keyframes linkedhub {
+            0%{transform: scale(0);}
+            100%{transform: scale(1);}
+        }
+    }
+    .text_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+
+        .text {
+            display: flex;
+            width: 100%;
+            height: 65%;
+            color: white;
+            font-size: 22px;
+
+            .span1 {
+                padding-top: 30px;
+                border-top: 1px solid white;
             }
         }
     }
