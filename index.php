@@ -69,7 +69,23 @@
             <div class="like">Things I dont like</div>
         </div>
         <div class="about_me_container">
-            <div class="about_left">
+        <div class="content1"><p class='p1'>coding ofcourse!</p></div>
+        <div class="content2"></div>
+        <div class="content3"></div>
+        <div class="content4"></div>
+        <div class="content5"></div>
+        <div class="content6"></div>
+        <div class="content7"></div>
+        <div class="content8"></div>
+        <div class="content9"></div>
+        <div class="content10"></div>
+        <img src="images/coding.jpg" class="photo1"/>
+        <img src="images/jazz.jpg" class="photo2"/>
+        <img src="images/negative.jpg" class="photo3"/>
+</div>
+
+
+            <!-- <div class="about_left">
                 <div class="one animation1 white">
                     <p class='p1'>coding ofcourse!</p>
                 </div>
@@ -102,7 +118,7 @@
                 <div class="five animation5 white">
                     <p class='p5'>forgetting a semicolon somewere...</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- start the contact me page -->
