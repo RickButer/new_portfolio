@@ -41,7 +41,7 @@
             <div class="middle_box flex">
                 <div class="skills" id="name"></div>
                 <img src="" class="card_photo" id="photo" />
-                <a href="" class="github flex">
+                <a href="https://github.com/RickButer?tab=repositories" target="_blank" class="github flex">
                     <p>go to my github to see all my projects</p>
                 </a>
             </div>
@@ -69,77 +69,63 @@
             <div class="like">Things I dont like</div>
         </div>
         <div class="about_me_container">
-        <div class="content1"><p class='p1'>coding ofcourse!</p></div>
-        <div class="content2"></div>
-        <div class="content3"></div>
-        <div class="content4"></div>
-        <div class="content5"></div>
-        <div class="content6"></div>
-        <div class="content7"></div>
-        <div class="content8"></div>
-        <div class="content9"></div>
-        <div class="content10"></div>
-        <img src="images/coding.jpg" class="photo1"/>
-        <img src="images/jazz.jpg" class="photo2"/>
-        <img src="images/negative.jpg" class="photo3"/>
-</div>
-
-
-            <!-- <div class="about_left">
-                <div class="one animation1 white">
-                    <p class='p1'>coding ofcourse!</p>
-                </div>
-                <div class="two animation2 white">
-                    <p class='p2'>jazz music</p>
-                </div>
-                <div class="tree animation3 white">
-                    <p class='p3'>riding my motorbike</p>
-                </div>
-                <div class="four animation4 white">
-                    <p class='p4'>watching the stars</p>
-                </div>
-                <div class="five animation5 white">
-                    <p class='p5'>exploring new cultures</p>
-                </div>
+            <div class="content1">
+                <p class='p1'>coding ofcourse!</p>
             </div>
-            <div class="about_right">
-                <div class="one animation1 white">
-                    <p class='p1'>politics</p>
-                </div>
-                <div class="two animation2 white">
-                    <p class='p2'>taxes</p>
-                </div>
-                <div class="tree animation3 white">
-                    <p class='p3'>shots at the bar</p>
-                </div>
-                <div class="four animation4 white">
-                    <p class='p4'>grumpy, negative people</p>
-                </div>
-                <div class="five animation5 white">
-                    <p class='p5'>forgetting a semicolon somewere...</p>
-                </div>
-            </div> -->
+            <div class="content2">
+                <p class='p2'>jazz music</p>
+            </div>
+            <div class="content3">
+                <p class='p3'>riding my motorbike</p>
+            </div>
+            <div class="content4">
+                <p class='p4'>watching the stars</p>
+            </div>
+            <div class="content5">
+                <p class='p5'>exploring new cultures</p>
+            </div>
+            <div class="content6">
+                <p class='p1'>politics</p>
+            </div>
+            <div class="content7">
+                <p class='p2'>taxes</p>
+            </div>
+            <div class="content8">
+                <p class='p3'>too much alcohol</p>
+            </div>
+            <div class="content9">
+                <p class='p4'>grumpy, negative people</p>
+            </div>
+            <div class="content10">
+                <p class='p5'>forgetting a semicolon somewere...</p>
+            </div>
+            <div class="border1"></div>
+            <div class="border2"></div>
+            <div class="border3"></div>
+            <div class="border4"></div>
+            <div class="border5"></div>
+            <img src="images/coding.jpg" class="photo1" />
+            <img src="images/jazz.jpg" class="photo2" />
+            <img src="images/negative.jpg" class="photo3" />
         </div>
     </div>
     <!-- start the contact me page -->
-    <div class="github_linkedin_text_container" id="contact_me_container">
+    <div class="github_linkedin_text_container">
         <div class="link_container">
-            <a href="#" class="linkedin"><img src="images/linkedin.jpg" /></a>
-            <a href="#" class="github"><img src="images/github.jpg" /></a>
-        </div>
+            <a href="https://www.linkedin.com/in/rick-buter-69b5a3170/" target="_blank" class="linkedin"><img src="images/linkedin.jpg"/></a>
+            <a href="https://github.com/RickButer?tab=repositories" target="_blank" class="github"><img src="images/github.jpg"/></a> -->
+        </div> 
         <div class="text_box">
             <div class="text">
                 <p>Hey there!<br /><br />My name is Rick Buter and I have started coding in January.<br /><br />
-                Feel free to contact me for any questions or to just say hi!<br /><br />
-                You can also click the links to the left to go to my LinkedIn or Github Page.<br /><br /><br /><br />
-                <span class="span1">buter.rick@gmail.com</span><br /><br />
+                    Feel free to contact me for any questions or to just say hi!<br /><br />
+                    You can also click the links to the left to go to my LinkedIn or Github Page.<br /><br /><br /><br />
+                    <span class="span1">buter.rick@gmail.com</span><br /><br />
+                    Phone number provided upon request.
                 </p>
             </div>
         </div>
     </div>
-
-
-
     <script src="js/main.js"></script>
     <script src="js/ajax.js"></script>
 </body>

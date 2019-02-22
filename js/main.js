@@ -57,7 +57,7 @@ function myProjects() {
     document.getElementsByClassName('bg')[0].style.backgroundColor = '#00f9bf';
     document.getElementsByClassName('full_card_container')[0].style.display = 'none';
     document.getElementsByClassName('about_me_toggle')[0].style.display = 'none';
-    document.getElementById('contact_me_container').style.display = 'none';
+    document.getElementsByClassName('github_linkedin_text_container')[0].style.display = 'none';
 }
 
 document.getElementById('contact_me').addEventListener('click', function(){
@@ -68,7 +68,7 @@ document.getElementById('contact_me').addEventListener('click', function(){
     document.getElementById('project_intro').style.display = 'none';
     document.getElementsByClassName('full_card_container')[0].style.display = 'none';
     document.getElementsByClassName('about_me_toggle')[0].style.display = 'none';
-    document.getElementById('contact_me_container').style.display = 'flex';
+    document.getElementsByClassName('github_linkedin_text_container')[0].style.display = 'flex';
     document.getElementsByClassName('bg')[0].style.backgroundColor = '#054cbf';
     }
 
@@ -81,6 +81,6 @@ document.getElementById('about_me').addEventListener('click', function(){
     document.getElementById('project_intro').style.display = 'none';
     document.getElementsByClassName('full_card_container')[0].style.display = 'none';
     document.getElementsByClassName('bg')[0].style.backgroundColor = '#b91df2';
-    document.getElementById('contact_me_container').style.display = 'none';
+    document.getElementsByClassName('github_linkedin_text_container')[0].style.display = 'none';
     }
 
